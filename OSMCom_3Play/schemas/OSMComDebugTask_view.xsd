@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:OSMComDebugTask="urn:com:metasolv:oms:xmlapi:1"
+	 
+    xmlns:exns0="http://xmlns.oracle.com/InputMessage"
+           targetNamespace="urn:com:metasolv:oms:xmlapi:1">
+    	<xs:import namespace="http://xmlns.oracle.com/InputMessage" schemaLocation="../dataDictionary/UpstreamInputMessage.xsd"/> 
+  
+    <xs:complexType name="OSMComDebugTask">
+        <xs:sequence>
+        <xs:element name="order" type="exns0:OrderType"/>
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
